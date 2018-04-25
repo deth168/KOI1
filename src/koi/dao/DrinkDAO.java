@@ -35,7 +35,7 @@ private Connection myConn;
 	}
 	
 	//qantity column keep tracks of the list of items selected by the user. If not null, the corresponding
-	//food item is selected by the customer.
+	//food item is selected by the staff.
 	public void updateQuantity(DrinkItem temp, int val) throws SQLException{
 		
 		PreparedStatement myStmt = null;

@@ -15,7 +15,7 @@ public class CartTableModel extends AbstractTableModel {
 	private static final int QUANTITY_COL = 3;
 	private static final int DRINK_SUB_TOTAL = 4;
 	
-	private String columnNames[] = {"Drink Serial", "Drink Code", "Drink Name", "Quantity", "Drink SubTotal"};
+	private String columnNames[] = {"No", "Drink Code", "Drink Name", "Quantity", "Drink SubTotal"};
 	
 	private List<DrinkItem> cartItems;
 	

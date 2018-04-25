@@ -61,7 +61,7 @@ public class UserSignUpDialog extends JDialog {
 			  }
 			});
 		
-		setTitle("Hungry Hobbit Cafeteria - Sign Up");
+		setTitle("KOI The - Sign Up");
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -131,13 +131,14 @@ public class UserSignUpDialog extends JDialog {
 		btnCreateAccount.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				createCustomer();				
+				createStaff();				
 			}
 		});
 		btnCreateAccount.setFont(new Font("Lucida Fax", Font.BOLD, 13));
 		btnCreateAccount.setBounds(21, 176, 158, 32);
 		contentPanel.add(btnCreateAccount);
 		
+		//btnBack
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -159,7 +160,7 @@ public class UserSignUpDialog extends JDialog {
 		});
 	}
 	
-	private void createCustomer(){
+	private void createStaff(){
 		String firstName = firstNameTextField.getText();
 		String lastName = lastNameTextField.getText();
 		String email = emailTextField.getText();

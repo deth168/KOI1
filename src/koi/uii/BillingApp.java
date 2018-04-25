@@ -1,3 +1,4 @@
+
 package koi.uii;
 import java.awt.EventQueue;
 
@@ -61,7 +62,7 @@ public class BillingApp extends JFrame {
 			  }
 			});
 		
-		setTitle("Hungry Hobbit Cafeteria");
+		setTitle("KOI The");
 		setBounds(100, 100, 550, 380);
 		setResizable(false);
 		contentPane = new JPanel();
@@ -105,10 +106,13 @@ public class BillingApp extends JFrame {
 		btnNewButton.setBounds(249, 121, 161, 67);
 		contentPane.add(btnNewButton);
 		
+		//btn log out
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//close current form
 				dispose();
+				//goto login form
 				userLoginDialog.setVisible(true);
 				System.out.println("Customer logged out.");
 			}

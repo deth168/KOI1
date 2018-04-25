@@ -42,7 +42,7 @@ public class OrderHistoryTableModel extends AbstractTableModel {
 			case OBJECT_COL:
 				return temp;
 			default:
-				return temp.getOrderId();
+				return temp.getOrderTotal();
 		}
 	}
 	

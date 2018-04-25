@@ -56,6 +56,7 @@ public class DrinkTableModel extends AbstractTableModel {
 			}
 		}
 		
+		//select
 		public Class getColumnClass(int col){
 			return getValueAt(0, col).getClass();
 		}

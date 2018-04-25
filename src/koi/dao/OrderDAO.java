@@ -35,7 +35,7 @@ private Connection myConn;
 	private Order convertRowToOrder(ResultSet myRs) throws SQLException{
 		int id = myRs.getInt("id");
 		int staffId = myRs.getInt("staff_id");
-		int orderTotal = myRs.getInt("order_total");
+		float orderTotal = myRs.getFloat("order_total");
 		Order tempOrder = new Order(id, staffId, orderTotal);
 		return tempOrder;
 		

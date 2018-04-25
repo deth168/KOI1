@@ -27,8 +27,8 @@ public StaffDAO() throws Exception{
 		String password = props.getProperty("password");
 		String dburl = props.getProperty("dburl");
 		
-		myConn = (Connection) DriverManager.getConnection(dburl, user, password);
-	
+		//myConn = (Connection) DriverManager.getConnection(dburl, user, password);
+		myConn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/koi","root","");
 		System.out.println("Staff DAO - DB connection succesful to " + dburl);
 		
 	}

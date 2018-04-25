@@ -93,6 +93,8 @@ public class UserLoginDialog extends JDialog {
 			lblPassword.setBounds(10, 50, 70, 14);
 			credentialPanel.add(lblPassword);
 			
+			
+			//Login Button
 			JButton btnLogIn = new JButton("Log in");
 			btnLogIn.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -108,9 +110,11 @@ public class UserLoginDialog extends JDialog {
 			lblNewUser.setBounds(34, 121, 80, 14);
 			credentialPanel.add(lblNewUser);
 			
+			//button signup
 			JButton btnSignUp = new JButton("Sign up");
 			btnSignUp.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
+					//goto from signup
 					UserSignUpDialog dialog = new UserSignUpDialog(UserLoginDialog.this, staffDAO);
 					//UserLoginDialog dialog = new UserLoginDialog();
 					dialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
@@ -132,6 +136,7 @@ public class UserLoginDialog extends JDialog {
 		}
 	}
 	
+	//Login
 	private void performLogin(){
 		String email = emailTextField.getText();
 		String plainTextPassword = new String(passwordField.getPassword());
